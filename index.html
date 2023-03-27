@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Budget App</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>balance</h1>
+      <h2 id="balance">0</h2>
+    </header>
+    <section class="breakdown">
+      <h3 class="breakdown-title">Breakdown</h3>
+      <ul>
+        <!-- <li class="item income">
+          <span class="description">Description</span>
+          <span>+</span>
+          <span>$0</span>
+        </li>
+        <li class="item expense">
+          <span class="description">Description</span>
+          <span>-</span>
+          <span>$0</span>
+        </li> -->
+      </ul>
+    </section>  
+<footer>
+  <div class="action">
+    <input id="description-input" type="text" placeholder="Description">
+    <input id="input" type="number" min="0" placeholder="$0">
+    <select id="select1">
+      <option value="expense">(-) Expense</option>
+      <option value="income">(+) Income</option>
+    </select>
+    <button id="add-btn">Add</button>
+  </div>
+</footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
